@@ -7,101 +7,105 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PRACTICA 1</title>
         <style>
-            li h2{
-                color: rgb(160, 211, 58);
+
+            #contenedor {
+                border: black 3px solid;
+                width: auto;
             }
-            li {
-                color: mediumorchid;
+            #cabecera {
+                background-color: #ff0000;
+                border-top: rgb(177, 176, 176) 10px solid;
+                width: auto;
             }
-            li strong{
-                color: blue;
+            #menu {
+                background-color: purple;
+                border-top: rgb(177, 176, 176) 10px solid;
+                width: auto;
             }
-            .colornegro{
-                color: black;
+            #contenidod {
+                background-color: brown;
+                float: left;
+                width: 70%; 
+                height: 500px;
+                max-height: 100%; 
             }
-            table, th , td{
-                border: 5px inset red;
-                border-collapse: initial;
+            #contenidoi {
+                background-color: rgb(52, 165, 42);
+                float: right;
+                width: 30%;
+                height: 500px;
+                max-height: 100%;
             }
-            table, th, td{
-                border: 10px dotted red;
-                border-collapse: 10px;
+            #pie {
+                background-color: yellow;
+                clear: both;
             }
-            input{
-                border: 2px solid red;
-                border-radius: 10px;
+            h1{
+                text-align: center;
+                color: aliceblue;
             }
-            
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
         </style>
-            
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script> $('div').html("<div>1</div>");</script>
+
     </head>
-        
-    <body>
-        <h1> BIENVENIDO A EL EJERCICIO </h1>
-        <P> En este ejercicio aprenderas CSS</P>
-        <ul>
-            <li><h2>TEMA 1</h2></li>
-            <li>INTRODUCCION A HTML Y CSS</li>
-            <li><h2>TEMA 2</h2></li>
-            <li>INTRODUCCION <strong>CSS</strong></li>
-            <li class="colornegro"><h3>TEMA 3</h3></li>
-            <li>INTRODUCCION JS</li>
-        </ul>
 
-        <img src="veigar_8.jpg" alt="" width="250" height="150">
-        
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <body id="contenedor">
 
-        <table>
-            <tr>
-                <th> NOMBRE</th>
-                <th>EDAD</th>
-                <th>CURP</th>
-                
-            </tr>
-            
-            <tr>
-                <th>FRANCISCO SANTAELLA</th>
-                <th>21 AÑOS</th>
-                <th>SARFRAN000511RHNOCZ</th>
-            </tr>
+        <div id="cabecera" >
+            <br>
+            <h1> HTML Y CSS MATERIA ITVO </h1>
+            <br>
+        </div>  
 
-        </table>
+        <div id="menu">
+            <br>
+            <th><a href="#">Inicio</a></th>
+            <th><a href="#">Pagina 1</a></th>
+            <th><a href="#">Pagina 2</a></th>
+            <th><a href="#">Blog</a></th>                
+            <th><a href="#">Contacto</a></th>
+            <br>
+            <br>
+        </div>      
 
-        <table>
-            <tr>
-                <th> NOMBRE</th>
-                <th>EDAD</th>
-                <th>CURP</th>
-            </tr>
-            
-            <tr>
-                <th>FRANCISCO SANTAELLA</th>
-                <th>21 AÑOS</th>
-                <th>SARFRAN000511RHNOCZ</th>
-            </tr>
-        </table>
-        
-        <table style="float: left;">
-            <tr>
-                <th><img src="veigar_8.jpg" alt="" width="250" height="150"></th>
-            </tr>
-        </table>
-        
-        <form action="">
-            <label> Nombre</label>
-            <input type="text">
-        </form>
+        <div id="contenidod">
+            <br>
+            <p><h2>TITULO DEL ARTICULO</h2></p>
+            <p>Texto del articulo</p>
+            <p><h2>TITULO DEL ARTICULO</h2></p>
+            <p>Texto del articulo</p>
+            <p><h2>TITULO DEL ARTICULO</h2></p>
+            <p>Texto del articulo</p>
+            <p><h2>TITULO DEL ARTICULO</h2></p>
+            <p>Texto del articulo</p>
+            <p><h2>TITULO DEL ARTICULO</h2></p>
+            <br>
+        </div>
 
-        <label>Hombre</label>
-        <input type="button">
-        <label > correo </label>
-        <input type="email" name="" id="">
-        <input type="password" name="" id="">
+        <div id="contenidoi">
+            <br>
+            <br>
+            <h1 style="text-align: center;"> Barra Lateral </h1>
+            <br>
+            <p>Busca un código:
+            <input type="search" name="busquedacodigo" size="4" maxlength="4">
+            <input type="submit" value="Buscar">
+            </p>
+        </div>
+
+        <div id="pie">
+            <br>
+            <p>FRANCISCO DANIEL SANTAELLA RUIZ</p>
+            <br>
+        </div>
 
     </body>
 
